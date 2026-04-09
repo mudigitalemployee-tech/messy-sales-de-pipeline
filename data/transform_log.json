@@ -1,138 +1,184 @@
 [
   {
-    "step": "pii_mask_customer_name",
-    "layer": "silver",
-    "action": "SHA256 hash applied to customer_name",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "PII column customer_name hashed for privacy compliance"
+    "rule": "blank_normalization",
+    "action": "Converted 40 empty/whitespace strings to NaN",
+    "detail": {
+      "customer_email": 26,
+      "product_name": 14
+    },
+    "rows_affected": 40
   },
   {
-    "step": "pii_mask_customer_email",
-    "layer": "silver",
-    "action": "SHA256 hash applied to customer_email",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "PII column customer_email hashed for privacy compliance"
+    "rule": "drop_critical_nulls",
+    "action": "Dropped 2 rows where critical field 'order_date' was null",
+    "column": "order_date",
+    "rows_affected": 2
   },
   {
-    "step": "null_fill_mode_product_name",
-    "layer": "silver",
-    "action": "Fill 27 null(s) with mode ('laptop') in product_name",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Categorical nulls in product_name filled with most frequent value: 'laptop'"
+    "rule": "impute_missing",
+    "action": "Filled 19 null(s) in 'category' with mode ('ELECTRONICS')",
+    "column": "category",
+    "strategy": "mode",
+    "fill_value": "ELECTRONICS",
+    "rows_affected": 19
   },
   {
-    "step": "null_fill_mode_category",
-    "layer": "silver",
-    "action": "Fill 19 null(s) with mode ('ELECTRONICS') in category",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Categorical nulls in category filled with most frequent value: 'ELECTRONICS'"
+    "rule": "impute_missing",
+    "action": "Filled 5 null(s) in 'quantity' with median (9.0)",
+    "column": "quantity",
+    "strategy": "median",
+    "fill_value": 9.0,
+    "rows_affected": 5
   },
   {
-    "step": "null_fill_median_quantity",
-    "layer": "silver",
-    "action": "Fill 8 null(s) with median (9.0) in quantity",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Numeric nulls in quantity filled with column median (robust to outliers)"
+    "rule": "impute_missing",
+    "action": "Filled 4 null(s) in 'unit_price' with median (2541.21)",
+    "column": "unit_price",
+    "strategy": "median",
+    "fill_value": 2541.21,
+    "rows_affected": 4
   },
   {
-    "step": "null_fill_median_unit_price",
-    "layer": "silver",
-    "action": "Fill 11 null(s) with median (2581.71) in unit_price",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Numeric nulls in unit_price filled with column median (robust to outliers)"
+    "rule": "impute_missing",
+    "action": "Filled 4 null(s) in 'total_amount' with median (22375.54)",
+    "column": "total_amount",
+    "strategy": "median",
+    "fill_value": 22375.54,
+    "rows_affected": 4
   },
   {
-    "step": "null_fill_median_total_amount",
-    "layer": "silver",
-    "action": "Fill 14 null(s) with median (22375.54) in total_amount",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Numeric nulls in total_amount filled with column median (robust to outliers)"
+    "rule": "impute_missing",
+    "action": "Filled 2 null(s) in 'discount_pct' with median (26.0)",
+    "column": "discount_pct",
+    "strategy": "median",
+    "fill_value": 26.0,
+    "rows_affected": 2
   },
   {
-    "step": "null_fill_median_discount_pct",
-    "layer": "silver",
-    "action": "Fill 3 null(s) with median (26.0) in discount_pct",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Numeric nulls in discount_pct filled with column median (robust to outliers)"
+    "rule": "impute_missing",
+    "action": "Filled 14 null(s) in 'region' with mode ('West')",
+    "column": "region",
+    "strategy": "mode",
+    "fill_value": "West",
+    "rows_affected": 14
   },
   {
-    "step": "null_flag_order_date",
-    "layer": "silver",
-    "action": "Add null flag for order_date",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Added order_date_is_null indicator column"
+    "rule": "impute_missing",
+    "action": "Filled 12 null(s) in 'sales_rep' with mode ('CHARLIE')",
+    "column": "sales_rep",
+    "strategy": "mode",
+    "fill_value": "CHARLIE",
+    "rows_affected": 12
   },
   {
-    "step": "null_fill_mode_region",
-    "layer": "silver",
-    "action": "Fill 14 null(s) with mode ('West') in region",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Categorical nulls in region filled with most frequent value: 'West'"
+    "rule": "impute_missing",
+    "action": "Filled 19 null(s) in 'status' with mode ('COMPLETED')",
+    "column": "status",
+    "strategy": "mode",
+    "fill_value": "COMPLETED",
+    "rows_affected": 19
   },
   {
-    "step": "null_fill_mode_sales_rep",
-    "layer": "silver",
-    "action": "Fill 12 null(s) with mode ('CHARLIE') in sales_rep",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Categorical nulls in sales_rep filled with most frequent value: 'CHARLIE'"
+    "rule": "impute_missing",
+    "action": "Filled 1 null(s) in 'rating' with median (3.0)",
+    "column": "rating",
+    "strategy": "median",
+    "fill_value": 3.0,
+    "rows_affected": 1
   },
   {
-    "step": "null_fill_mode_status",
-    "layer": "silver",
-    "action": "Fill 20 null(s) with mode ('COMPLETED') in status",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Categorical nulls in status filled with most frequent value: 'COMPLETED'"
+    "rule": "email_validation",
+    "action": "Found 28 invalid email(s) in 'customer_email' \u2192 set to null, flagged in customer_email_valid_flag",
+    "column": "customer_email",
+    "rows_affected": 28
   },
   {
-    "step": "pii_mask_phone_number",
-    "layer": "silver",
-    "action": "SHA256 hash applied to phone_number",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "PII column phone_number hashed for privacy compliance"
+    "rule": "negative_value_handling",
+    "action": "Converted 5 negative value(s) in 'quantity' to absolute, flagged in quantity_negative_flag",
+    "column": "quantity",
+    "rows_affected": 5
   },
   {
-    "step": "null_fill_median_rating",
-    "layer": "silver",
-    "action": "Fill 2 null(s) with median (3.0) in rating",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Numeric nulls in rating filled with column median (robust to outliers)"
+    "rule": "negative_value_handling",
+    "action": "Converted 3 negative value(s) in 'unit_price' to absolute, flagged in unit_price_negative_flag",
+    "column": "unit_price",
+    "rows_affected": 3
   },
   {
-    "step": "clamp_negative_unit_price",
-    "layer": "silver",
-    "action": "Clamp negative values in unit_price to 0",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "3 negative value(s) in unit_price set to 0. Original flagged in unit_price_had_negative."
+    "rule": "negative_value_handling",
+    "action": "Converted 6 negative value(s) in 'total_amount' to absolute, flagged in total_amount_negative_flag",
+    "column": "total_amount",
+    "rows_affected": 6
   },
   {
-    "step": "clamp_negative_total_amount",
-    "layer": "silver",
-    "action": "Clamp negative values in total_amount to 0",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "6 negative value(s) in total_amount set to 0. Original flagged in total_amount_had_negative."
+    "rule": "date_validation",
+    "action": "8 invalid date(s) in 'order_date' flagged in order_date_valid_flag, valid dates standardized to YYYY-MM-DD",
+    "column": "order_date",
+    "rows_affected": 8
   },
   {
-    "step": "dedup_silver",
-    "layer": "silver",
-    "action": "Remove duplicate rows",
-    "rows_in": 100,
-    "rows_out": 100,
-    "notes": "Removed 0 duplicate rows in Silver layer"
+    "rule": "business_validation",
+    "action": "5 value(s) in 'quantity' violated business rule \u2192 Clamped to >=0, flagged in quantity_valid_flag",
+    "column": "quantity",
+    "rows_affected": 5
+  },
+  {
+    "rule": "business_validation",
+    "action": "7 value(s) in 'discount_pct' violated business rule \u2192 Clamped to [0,100], flagged in discount_pct_valid_flag",
+    "column": "discount_pct",
+    "rows_affected": 7
+  },
+  {
+    "rule": "business_validation",
+    "action": "6 value(s) in 'rating' violated business rule \u2192 Clamped to [0,5], flagged in rating_valid_flag",
+    "column": "rating",
+    "rows_affected": 6
+  },
+  {
+    "rule": "derived_recalculation",
+    "action": "Recalculated 'total_amount' = quantity \u00d7 unit_price \u00d7 (1 - discount_pct/100) | 98 row(s) had mismatched source values (preserved in total_amount_source)",
+    "column": "total_amount",
+    "rows_affected": 98
+  },
+  {
+    "rule": "text_standardization",
+    "action": "Standardized 'category': strip + uppercase + special char removal (48 value(s) changed)",
+    "column": "category",
+    "rows_affected": 48
+  },
+  {
+    "rule": "text_standardization",
+    "action": "Standardized 'region': strip + uppercase + special char removal (83 value(s) changed)",
+    "column": "region",
+    "rows_affected": 83
+  },
+  {
+    "rule": "text_standardization",
+    "action": "Standardized 'status': strip + uppercase + special char removal (34 value(s) changed)",
+    "column": "status",
+    "rows_affected": 34
+  },
+  {
+    "rule": "duplicate_detection",
+    "action": "Removed 0 duplicate row(s) | 98 rows remain",
+    "rows_affected": 0
+  },
+  {
+    "rule": "pii_masking",
+    "action": "SHA256-hashed PII column 'customer_name'",
+    "column": "customer_name",
+    "rows_affected": 81
+  },
+  {
+    "rule": "pii_masking",
+    "action": "SHA256-hashed PII column 'customer_email'",
+    "column": "customer_email",
+    "rows_affected": 22
+  },
+  {
+    "rule": "pii_masking",
+    "action": "SHA256-hashed PII column 'phone_number'",
+    "column": "phone_number",
+    "rows_affected": 76
   }
 ]

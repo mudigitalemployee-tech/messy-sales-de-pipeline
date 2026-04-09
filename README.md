@@ -9,9 +9,9 @@
 | **Purpose** | Analyze sales transactions to identify revenue patterns, regional performance, and data quality issues for business reporting |
 | **Source** | SQLITE |
 | **Raw Rows** | 100 |
-| **Silver Rows** | 100 |
-| **Gold Rows** | 100 |
-| **DQ Score** | 84.2% |
+| **Silver Rows** | 98 |
+| **Gold Rows** | 98 |
+| **DQ Score** | 68.9% |
 | **Schedule** | 0 6 * * * |
 | **DAG ID** | messy_sales_pipeline |
 
