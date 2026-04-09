@@ -1,10 +1,10 @@
 {
-  "dq_score_pct": 69.2,
+  "dq_score_pct": 78.9,
   "dq_status": "FAIL",
-  "passed": 18,
+  "passed": 15,
   "warnings": 0,
-  "failed": 8,
-  "total_checks": 26,
+  "failed": 4,
+  "total_checks": 19,
   "checks": [
     {
       "category": "Completeness",
@@ -42,15 +42,15 @@
       "category": "Completeness",
       "column": "category",
       "check": "Null % \u2264 5.0%",
-      "value": 19.0,
+      "value": 0.0,
       "threshold": 5.0,
-      "status": "FAIL"
+      "status": "PASS"
     },
     {
       "category": "Completeness",
       "column": "quantity",
       "check": "Null % \u2264 5.0%",
-      "value": 5.0,
+      "value": 0.0,
       "threshold": 5.0,
       "status": "PASS"
     },
@@ -58,7 +58,7 @@
       "category": "Completeness",
       "column": "unit_price",
       "check": "Null % \u2264 5.0%",
-      "value": 4.0,
+      "value": 0.0,
       "threshold": 5.0,
       "status": "PASS"
     },
@@ -66,7 +66,7 @@
       "category": "Completeness",
       "column": "total_amount",
       "check": "Null % \u2264 5.0%",
-      "value": 4.0,
+      "value": 0.0,
       "threshold": 5.0,
       "status": "PASS"
     },
@@ -74,7 +74,7 @@
       "category": "Completeness",
       "column": "discount_pct",
       "check": "Null % \u2264 5.0%",
-      "value": 2.0,
+      "value": 0.0,
       "threshold": 5.0,
       "status": "PASS"
     },
@@ -90,25 +90,25 @@
       "category": "Completeness",
       "column": "region",
       "check": "Null % \u2264 5.0%",
-      "value": 14.0,
+      "value": 0.0,
       "threshold": 5.0,
-      "status": "FAIL"
+      "status": "PASS"
     },
     {
       "category": "Completeness",
       "column": "sales_rep",
       "check": "Null % \u2264 5.0%",
-      "value": 12.0,
+      "value": 0.0,
       "threshold": 5.0,
-      "status": "FAIL"
+      "status": "PASS"
     },
     {
       "category": "Completeness",
       "column": "status",
       "check": "Null % \u2264 5.0%",
-      "value": 20.0,
+      "value": 0.0,
       "threshold": 5.0,
-      "status": "FAIL"
+      "status": "PASS"
     },
     {
       "category": "Completeness",
@@ -121,46 +121,6 @@
     {
       "category": "Completeness",
       "column": "rating",
-      "check": "Null % \u2264 5.0%",
-      "value": 1.0,
-      "threshold": 5.0,
-      "status": "PASS"
-    },
-    {
-      "category": "Completeness",
-      "column": "category_is_null",
-      "check": "Null % \u2264 5.0%",
-      "value": 0.0,
-      "threshold": 5.0,
-      "status": "PASS"
-    },
-    {
-      "category": "Completeness",
-      "column": "quantity_is_null",
-      "check": "Null % \u2264 5.0%",
-      "value": 0.0,
-      "threshold": 5.0,
-      "status": "PASS"
-    },
-    {
-      "category": "Completeness",
-      "column": "unit_price_is_null",
-      "check": "Null % \u2264 5.0%",
-      "value": 0.0,
-      "threshold": 5.0,
-      "status": "PASS"
-    },
-    {
-      "category": "Completeness",
-      "column": "total_amount_is_null",
-      "check": "Null % \u2264 5.0%",
-      "value": 0.0,
-      "threshold": 5.0,
-      "status": "PASS"
-    },
-    {
-      "category": "Completeness",
-      "column": "discount_pct_is_null",
       "check": "Null % \u2264 5.0%",
       "value": 0.0,
       "threshold": 5.0,
@@ -176,7 +136,7 @@
     },
     {
       "category": "Completeness",
-      "column": "region_is_null",
+      "column": "unit_price_had_negative",
       "check": "Null % \u2264 5.0%",
       "value": 0.0,
       "threshold": 5.0,
@@ -184,23 +144,7 @@
     },
     {
       "category": "Completeness",
-      "column": "sales_rep_is_null",
-      "check": "Null % \u2264 5.0%",
-      "value": 0.0,
-      "threshold": 5.0,
-      "status": "PASS"
-    },
-    {
-      "category": "Completeness",
-      "column": "status_is_null",
-      "check": "Null % \u2264 5.0%",
-      "value": 0.0,
-      "threshold": 5.0,
-      "status": "PASS"
-    },
-    {
-      "category": "Completeness",
-      "column": "rating_is_null",
+      "column": "total_amount_had_negative",
       "check": "Null % \u2264 5.0%",
       "value": 0.0,
       "threshold": 5.0,

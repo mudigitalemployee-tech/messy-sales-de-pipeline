@@ -24,44 +24,44 @@
     "notes": "PII column product_name hashed for privacy compliance"
   },
   {
-    "step": "null_flag_category",
+    "step": "null_fill_mode_category",
     "layer": "silver",
-    "action": "Add null flag for category",
+    "action": "Fill 19 null(s) with mode ('ELECTRONICS') in category",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Added category_is_null indicator column"
+    "notes": "Categorical nulls in category filled with most frequent value: 'ELECTRONICS'"
   },
   {
-    "step": "null_flag_quantity",
+    "step": "null_fill_median_quantity",
     "layer": "silver",
-    "action": "Add null flag for quantity",
+    "action": "Fill 8 null(s) with median (9.0) in quantity",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Added quantity_is_null indicator column"
+    "notes": "Numeric nulls in quantity filled with column median (robust to outliers)"
   },
   {
-    "step": "null_flag_unit_price",
+    "step": "null_fill_median_unit_price",
     "layer": "silver",
-    "action": "Add null flag for unit_price",
+    "action": "Fill 11 null(s) with median (2581.71) in unit_price",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Added unit_price_is_null indicator column"
+    "notes": "Numeric nulls in unit_price filled with column median (robust to outliers)"
   },
   {
-    "step": "null_flag_total_amount",
+    "step": "null_fill_median_total_amount",
     "layer": "silver",
-    "action": "Add null flag for total_amount",
+    "action": "Fill 14 null(s) with median (22375.54) in total_amount",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Added total_amount_is_null indicator column"
+    "notes": "Numeric nulls in total_amount filled with column median (robust to outliers)"
   },
   {
-    "step": "null_flag_discount_pct",
+    "step": "null_fill_median_discount_pct",
     "layer": "silver",
-    "action": "Add null flag for discount_pct",
+    "action": "Fill 3 null(s) with median (26.0) in discount_pct",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Added discount_pct_is_null indicator column"
+    "notes": "Numeric nulls in discount_pct filled with column median (robust to outliers)"
   },
   {
     "step": "null_flag_order_date",
@@ -72,28 +72,28 @@
     "notes": "Added order_date_is_null indicator column"
   },
   {
-    "step": "null_flag_region",
+    "step": "null_fill_mode_region",
     "layer": "silver",
-    "action": "Add null flag for region",
+    "action": "Fill 14 null(s) with mode ('West') in region",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Added region_is_null indicator column"
+    "notes": "Categorical nulls in region filled with most frequent value: 'West'"
   },
   {
-    "step": "null_flag_sales_rep",
+    "step": "null_fill_mode_sales_rep",
     "layer": "silver",
-    "action": "Add null flag for sales_rep",
+    "action": "Fill 12 null(s) with mode ('CHARLIE') in sales_rep",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Added sales_rep_is_null indicator column"
+    "notes": "Categorical nulls in sales_rep filled with most frequent value: 'CHARLIE'"
   },
   {
-    "step": "null_flag_status",
+    "step": "null_fill_mode_status",
     "layer": "silver",
-    "action": "Add null flag for status",
+    "action": "Fill 20 null(s) with mode ('COMPLETED') in status",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Added status_is_null indicator column"
+    "notes": "Categorical nulls in status filled with most frequent value: 'COMPLETED'"
   },
   {
     "step": "pii_mask_phone_number",
@@ -104,12 +104,28 @@
     "notes": "PII column phone_number hashed for privacy compliance"
   },
   {
-    "step": "null_flag_rating",
+    "step": "null_fill_median_rating",
     "layer": "silver",
-    "action": "Add null flag for rating",
+    "action": "Fill 2 null(s) with median (3.0) in rating",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Added rating_is_null indicator column"
+    "notes": "Numeric nulls in rating filled with column median (robust to outliers)"
+  },
+  {
+    "step": "clamp_negative_unit_price",
+    "layer": "silver",
+    "action": "Clamp negative values in unit_price to 0",
+    "rows_in": 100,
+    "rows_out": 100,
+    "notes": "3 negative value(s) in unit_price set to 0. Original flagged in unit_price_had_negative."
+  },
+  {
+    "step": "clamp_negative_total_amount",
+    "layer": "silver",
+    "action": "Clamp negative values in total_amount to 0",
+    "rows_in": 100,
+    "rows_out": 100,
+    "notes": "6 negative value(s) in total_amount set to 0. Original flagged in total_amount_had_negative."
   },
   {
     "step": "dedup_silver",

@@ -11,7 +11,7 @@
 | **Raw Rows** | 100 |
 | **Silver Rows** | 100 |
 | **Gold Rows** | 100 |
-| **DQ Score** | 69.2% |
+| **DQ Score** | 78.9% |
 | **Schedule** | 0 6 * * * |
 | **DAG ID** | messy_sales_pipeline |
 
