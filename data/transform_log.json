@@ -18,10 +18,10 @@
   {
     "step": "null_fill_mode_product_name",
     "layer": "silver",
-    "action": "Fill 13 null(s) with mode ('') in product_name",
+    "action": "Fill 27 null(s) with mode ('laptop') in product_name",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "Categorical nulls in product_name filled with most frequent value: ''"
+    "notes": "Categorical nulls in product_name filled with most frequent value: 'laptop'"
   },
   {
     "step": "null_fill_mode_category",

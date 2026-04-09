@@ -26,7 +26,7 @@
       "category": "Completeness",
       "column": "customer_email",
       "check": "Null % \u2264 5.0%",
-      "value": 22.0,
+      "value": 48.0,
       "threshold": 5.0,
       "status": "FAIL"
     },
