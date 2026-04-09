@@ -1,0 +1,218 @@
+{
+  "dq_score_pct": 69.2,
+  "dq_status": "FAIL",
+  "passed": 18,
+  "warnings": 0,
+  "failed": 8,
+  "total_checks": 26,
+  "checks": [
+    {
+      "category": "Completeness",
+      "column": "transaction_id",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "customer_name",
+      "check": "Null % \u2264 5.0%",
+      "value": 17.0,
+      "threshold": 5.0,
+      "status": "FAIL"
+    },
+    {
+      "category": "Completeness",
+      "column": "customer_email",
+      "check": "Null % \u2264 5.0%",
+      "value": 22.0,
+      "threshold": 5.0,
+      "status": "FAIL"
+    },
+    {
+      "category": "Completeness",
+      "column": "product_name",
+      "check": "Null % \u2264 5.0%",
+      "value": 13.0,
+      "threshold": 5.0,
+      "status": "FAIL"
+    },
+    {
+      "category": "Completeness",
+      "column": "category",
+      "check": "Null % \u2264 5.0%",
+      "value": 19.0,
+      "threshold": 5.0,
+      "status": "FAIL"
+    },
+    {
+      "category": "Completeness",
+      "column": "quantity",
+      "check": "Null % \u2264 5.0%",
+      "value": 5.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "unit_price",
+      "check": "Null % \u2264 5.0%",
+      "value": 4.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "total_amount",
+      "check": "Null % \u2264 5.0%",
+      "value": 4.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "discount_pct",
+      "check": "Null % \u2264 5.0%",
+      "value": 2.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "order_date",
+      "check": "Null % \u2264 5.0%",
+      "value": 2.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "region",
+      "check": "Null % \u2264 5.0%",
+      "value": 14.0,
+      "threshold": 5.0,
+      "status": "FAIL"
+    },
+    {
+      "category": "Completeness",
+      "column": "sales_rep",
+      "check": "Null % \u2264 5.0%",
+      "value": 12.0,
+      "threshold": 5.0,
+      "status": "FAIL"
+    },
+    {
+      "category": "Completeness",
+      "column": "status",
+      "check": "Null % \u2264 5.0%",
+      "value": 20.0,
+      "threshold": 5.0,
+      "status": "FAIL"
+    },
+    {
+      "category": "Completeness",
+      "column": "phone_number",
+      "check": "Null % \u2264 5.0%",
+      "value": 22.0,
+      "threshold": 5.0,
+      "status": "FAIL"
+    },
+    {
+      "category": "Completeness",
+      "column": "rating",
+      "check": "Null % \u2264 5.0%",
+      "value": 1.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "category_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "quantity_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "unit_price_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "total_amount_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "discount_pct_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "order_date_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "region_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "sales_rep_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "status_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Completeness",
+      "column": "rating_is_null",
+      "check": "Null % \u2264 5.0%",
+      "value": 0.0,
+      "threshold": 5.0,
+      "status": "PASS"
+    },
+    {
+      "category": "Uniqueness",
+      "column": "_all_",
+      "check": "Duplicate % \u2264 1.0%",
+      "value": 0.0,
+      "threshold": 1.0,
+      "status": "PASS"
+    }
+  ]
+}

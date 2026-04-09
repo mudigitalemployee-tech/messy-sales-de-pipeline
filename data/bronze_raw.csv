@@ -1,0 +1,101 @@
+transaction_id,customer_name,customer_email,product_name,category,quantity,unit_price,total_amount,discount_pct,order_date,region,sales_rep,status,phone_number,rating
+TXN0001,,not_an_email,Headphones,,4,4340.9,11226.34,9,2024-05-25,South,Charlie,,9876543210,2
+TXN0002,,rahul@gmail.com,Tablet,,0,4741.45,28427.59,6,2024-11-01,east, Bob,,abcdefghij,5
+TXN0003,Priya Singh,priya@,laptop,Food,9,,20824.16,41,2024-05-03,West,Bob ,completed,+91-9876543210,4
+TXN0004,RAHUL SHARMA,amit@company.com,,ELECTRONICS,7,4991.4,-999,46,2024-11-29,south, Bob,COMPLETED,,5
+TXN0005,Priya Singh,,Phone,Electronics,-5,1822.18,39273.84,28,2024-02-24,south,alice,PENDING,abcdefghij,2
+TXN0006,John Doe,not_an_email,laptop,clothing,5,,20082.46,9,2024-03-14,West,Alice,,9876543210,2
+TXN0007,  Priya Singh  ,,,FOOD,9,4903.62,,3,2024-07-17,NORTH,Charlie,Refunded,123,1
+TXN0008,Priya Singh,,Phone,Food,7,389.07,13306.68,150,2024-02-21,South,CHARLIE,completed,123,1
+TXN0009,,,,clothing,6,227.24,42721.93,25,2024-13-45,,alice,COMPLETED,,4
+TXN0010,  Priya Singh  ,,Tablet,,12,522.85,20300.85,38,2024-07-07,West,alice,,,0
+TXN0011,RAHUL SHARMA,amit@company.com,,clothing,5,1734.86,48370.51,48,2024-06-11,NORTH, Bob,CANCELLED,9876543210,4
+TXN0012,John Doe,not_an_email,,clothing,,4611.51,11721.99,26,2024-04-01,South,,completed,123,2
+TXN0013,John Doe,priya@,laptop,ELECTRONICS,17,0,46099.45,45,2024-12-26,NORTH,CHARLIE,,abcdefghij,3
+TXN0014,Rahul Sharma,,Phone,ELECTRONICS,2,4676.85,-999,26,2024-05-04,south,Bob ,completed,,4
+TXN0015,John Doe,,T-Shirt,,-5,143.18,15380.29,50,2024-01-12,east,Bob ,,abcdefghij,2
+TXN0016,RAHUL SHARMA,,T-Shirt,electronics,10,0,26727.1,5,2024-10-20,NORTH,alice,Completed,9876543210,1
+TXN0017,  Priya Singh  ,,Phone,Food,16,2581.71,,34,2024-03-25,West,Alice,COMPLETED,9876543210,4
+TXN0018,Priya Singh,priya@,Laptop,,5,2270.65,17531.98,-10,2024-01-08,NORTH,Bob,PENDING,abcdefghij,2
+TXN0019,Priya Singh,priya@,Phone,electronics,3,3590.79,24809.51,49,,North,Bob,,abcdefghij,2
+TXN0020,Priya Singh,,Phone,FOOD,7,3021.38,29946.49,25,2024-02-29,,Alice,COMPLETED,,-1
+TXN0021,Priya Singh,priya@,laptop,,8,4410.87,14032.89,19,2024-12-09,east, Bob,Refunded,9876543210,4
+TXN0022,Priya Singh,rahul@gmail.com,laptop,clothing,0,2835.12,31361.84,29,2024-12-06,,Alice,,9876543210,5
+TXN0023,Rahul Sharma,,Phone,Food,10,,18373.33,45,2024-02-22,south,Bob,CANCELLED,123,5
+TXN0024,  Priya Singh  ,not_an_email,Laptop,Food,7,4369.99,abc,16,2024-06-09,,CHARLIE,,+91-9876543210,5
+TXN0025,John Doe,not_an_email,Tablet,Electronics,,4160.51,45734.29,10,2024-03-05,east,Charlie,COMPLETED,,4
+TXN0026,Amit Kumar,amit@company.com,T-Shirt,electronics,19,0,1649.04,50,2024-06-18,East,CHARLIE,,,1
+TXN0027,Rahul Sharma,amit@company.com,Headphones,Food,15,3048.51,abc,27,2024-12-12,south, Bob,PENDING,,5
+TXN0028,Rahul Sharma,,,clothing,15,1144.24,19212.49,,2024-09-12,NORTH,CHARLIE,,,4
+TXN0029,Priya Singh,rahul@gmail.com,Shoes,ELECTRONICS,5,2646.35,30975.7,6,Jan 2024,NORTH,CHARLIE,Refunded,+91-9876543210,2
+TXN0030,Amit Kumar,,,Clothing,2,3819.5,20994.46,43,2024-11-22,NORTH,alice,CANCELLED,abcdefghij,10
+TXN0031,,,Headphones,,13,1813.65,20648.15,16,2024-05-08,North,Bob ,PENDING,9876543210,4
+TXN0032,Priya Singh,amit@company.com,,ELECTRONICS,abc,2678.98,26141.45,26,2024-12-29,,alice,completed,abcdefghij,1
+TXN0033,,priya@,Shoes,Food,14,abc,6978.76,20,2024-07-16,East,CHARLIE,PENDING,123,5
+TXN0034,Priya Singh,rahul@gmail.com,,,1,4061.46,,46,2024-03-28,east,,,,2
+TXN0035,,not_an_email,Phone,Electronics,,4730.27,15391.8,34,2024-06-19,South,Alice,cancelled,9876543210,2
+TXN0036,  Priya Singh  ,,,FOOD,18,abc,13987.41,44,2024-02-03,North,Alice,CANCELLED,,3
+TXN0037,  Priya Singh  ,,Laptop,ELECTRONICS,11,3922.2,-999,23,2024-01-11,North,alice,COMPLETED,9876543210,3
+TXN0038,Amit Kumar,,Shoes,Clothing,12,1774.49,7078.55,-10,2024-06-19,east,CHARLIE,,9876543210,3
+TXN0039,Priya Singh,priya@,Shoes,Clothing,5,3203.65,12572.71,1,,East,Bob,COMPLETED,123,1
+TXN0040,Amit Kumar,amit@company.com,Tablet,FOOD,9,4513.52,4788.7,38,2024-11-22,West,,Refunded,+91-9876543210,10
+TXN0041,Amit Kumar,,Tablet,,14,2887.89,27235.01,41,2024-03-26,east,CHARLIE,completed,123,1
+TXN0042,Amit Kumar,,Tablet,ELECTRONICS,-5,2541.21,26328.09,20,2024-03-03,West,Bob,,abcdefghij,2
+TXN0043,  Priya Singh  ,,Tablet,Electronics,10,-100.5,32711.35,4,2024-09-09,,CHARLIE,cancelled,abcdefghij,5
+TXN0044,RAHUL SHARMA,,,,7,1855.83,N/A,3,2024-11-02,East,Charlie,Completed,9876543210,5
+TXN0045,Rahul Sharma,,T-Shirt,FOOD,0,958.66,12708.15,4,2024-06-17,North,Charlie,,9876543210,4
+TXN0046,Amit Kumar,,,Food,1,-100.5,47431.12,40,2024-03-20,North,Bob,Refunded,9876543210,3
+TXN0047,John Doe,,laptop,clothing,18,2106.18,N/A,12,2024-09-14,NORTH, Bob,Refunded,+91-9876543210,1
+TXN0048,Amit Kumar,,Phone,electronics,5,951.94,31475.75,150,2024-03-19,North,Charlie,Refunded,+91-9876543210,4
+TXN0049,RAHUL SHARMA,rahul@gmail.com,,FOOD,13,3580.98,45137.39,8,32/13/2024,South,alice,COMPLETED,123,1
+TXN0050,John Doe,,Laptop,Electronics,11,2133.35,2637.29,42,2024-11-06,North,Alice,Refunded,+91-9876543210,10
+TXN0051,,amit@company.com,Phone,,13,3215.07,14480.98,6,2024-06-29,,Alice,COMPLETED,9876543210,4
+TXN0052,John Doe,,Laptop,ELECTRONICS,,3386.6,22932.42,30,2024-09-26,NORTH,Bob ,CANCELLED,,4
+TXN0053,,,Tablet,clothing,17,abc,33069.44,3,2024-09-19,south,Charlie,COMPLETED,+91-9876543210,2
+TXN0054,RAHUL SHARMA,not_an_email,laptop,electronics,17,3479.43,abc,2,2024-03-23,South,CHARLIE,PENDING,,3
+TXN0055,  Priya Singh  ,,laptop,FOOD,0,183.89,36181.66,41,2024-10-13,North,,Refunded,123,5
+TXN0056,,priya@,Headphones,ELECTRONICS,7,abc,33026.74,4,2024-07-06,NORTH,Charlie,COMPLETED,abcdefghij,3
+TXN0057,John Doe,not_an_email,,FOOD,14,2449.31,abc,44,2024-12-15,East,Alice,Completed,,5
+TXN0058,John Doe,,Shoes,,4,643.39,40583.46,-10,2024-09-06,West,,PENDING,+91-9876543210,3
+TXN0059,Rahul Sharma,priya@,T-Shirt,FOOD,5,3690.11,24284.89,2,32/13/2024,south,,CANCELLED,abcdefghij,1
+TXN0060,Priya Singh,,Shoes,electronics,17,3740.88,21818.66,2,2024-04-05,East,,Completed,+91-9876543210,10
+TXN0061,Amit Kumar,amit@company.com,T-Shirt,FOOD,4,1093.27,6437.11,10,2024-04-24,NORTH,alice,CANCELLED,+91-9876543210,5
+TXN0062,  Priya Singh  ,,Headphones,clothing,,4717.38,6493.78,20,2024-08-16,South, Bob,COMPLETED,123,2
+TXN0063,Rahul Sharma,,Tablet,Electronics,20,,14273.31,40,2024-02-11,NORTH,Bob ,Completed,+91-9876543210,4
+TXN0064,Priya Singh,priya@,Headphones,ELECTRONICS,4,578.75,N/A,7,2024-09-09,West,CHARLIE,COMPLETED,9876543210,4
+TXN0065,Priya Singh,,Laptop,ELECTRONICS,-5,2674.68,31439.39,41,2024-07-23,West,CHARLIE,,9876543210,3
+TXN0066,RAHUL SHARMA,,,,15,abc,37120.42,28,2024-01-04,North,Bob,completed,9876543210,2
+TXN0067,  Priya Singh  ,,,ELECTRONICS,6,776.72,N/A,9,2024-08-03,south,Charlie,cancelled,9876543210,2
+TXN0068,John Doe,rahul@gmail.com,Laptop,Electronics,8,3420.88,4779.39,,2024-06-30,North,Bob ,COMPLETED,,1
+TXN0069,Rahul Sharma,not_an_email,Laptop,ELECTRONICS,18,4366.16,19711.81,48,2024-13-45,West,Charlie,PENDING,+91-9876543210,4
+TXN0070,John Doe,,Shoes,electronics,6,4565.35,29214.74,34,2024-05-15,east,,PENDING,+91-9876543210,-1
+TXN0071,John Doe,,,FOOD,14,3449.54,2829.61,24,2024-06-30,,,PENDING,,4
+TXN0072,  Priya Singh  ,,laptop,,0,1473.24,25139.84,40,2024-11-08,South,Alice,CANCELLED,+91-9876543210,2
+TXN0073,,,Headphones,Clothing,20,abc,35900.79,25,2024-11-16,West,,COMPLETED,,4
+TXN0074,John Doe,amit@company.com,,clothing,11,1741.45,-999,26,2024-05-31,West, Bob,COMPLETED,9876543210,3
+TXN0075,Priya Singh,not_an_email,Phone,Electronics,abc,3861.63,29052.98,37,2024-05-22,,Bob,completed,+91-9876543210,2
+TXN0076,Amit Kumar,rahul@gmail.com,Shoes,Clothing,11,-100.5,2740.49,22,2024-05-26,NORTH,alice,,123,3
+TXN0077,Priya Singh,rahul@gmail.com,Laptop,electronics,11,252.47,,48,2024-08-26,south,alice,,123,4
+TXN0078,Amit Kumar,not_an_email,,FOOD,14,2693.42,17341.07,-10,2024-03-30,South,Bob,Completed,,1
+TXN0079,Amit Kumar,priya@,laptop,clothing,3,2242.85,47564.65,3,Jan 2024,east,Bob,COMPLETED,9876543210,3
+TXN0080,  Priya Singh  ,amit@company.com,,electronics,9,1187.64,27020.34,37,2024-07-28,West, Bob,PENDING,9876543210,
+TXN0081,,not_an_email,Shoes,electronics,10,4546.57,32312.04,14,2024-11-08,NORTH,Bob ,CANCELLED,9876543210,4
+TXN0082,Rahul Sharma,amit@company.com,Phone,electronics,999,4458.22,46720.94,0,2024-12-05,,Bob,Completed,9876543210,5
+TXN0083,RAHUL SHARMA,not_an_email,,Clothing,13,abc,13877.35,33,2024-06-09,West,CHARLIE,CANCELLED,abcdefghij,5
+TXN0084,RAHUL SHARMA,,,Food,18,3311.68,abc,27,2024-05-21,south,alice,CANCELLED,+91-9876543210,3
+TXN0085,RAHUL SHARMA,,T-Shirt,,abc,665.78,41201.8,3,2024-07-13,West,Bob ,CANCELLED,+91-9876543210,5
+TXN0086,Priya Singh,,,FOOD,8,0,40554.37,26,2024-09-26,South,Alice,,123,3
+TXN0087,  Priya Singh  ,priya@,laptop,FOOD,3,1817.04,-999,25,2024-02-27,,,Refunded,,4
+TXN0088,,,Tablet,,11,3725.05,43338.55,abc,2024-06-21,South, Bob,PENDING,abcdefghij,2
+TXN0089,John Doe,,Shoes,ELECTRONICS,7,470.33,35796.13,34,32/13/2024,,Charlie,Completed,123,4
+TXN0090,,,Shoes,electronics,13,1439.44,42931.86,13,2024-10-11,, Bob,completed,123,abc
+TXN0091,Amit Kumar,priya@,,electronics,12,445.74,41979.52,49,2024-09-02,West,Charlie,COMPLETED,,4
+TXN0092,  Priya Singh  ,rahul@gmail.com,,ELECTRONICS,-5,1926.86,45966.29,40,2024-07-11,South,alice,Completed,9876543210,1
+TXN0093,,priya@,Tablet,,15,0,13450.26,33,2024-07-14,North,CHARLIE,Completed,9876543210,2
+TXN0094,Priya Singh,,T-Shirt,Clothing,16,3024.74,N/A,40,2024-12-28,South,alice,CANCELLED,abcdefghij,1
+TXN0095,,,,,999,960.89,30361.17,8,2024-06-23,, Bob,completed,abcdefghij,3
+TXN0096,,not_an_email,T-Shirt,Clothing,6,0,2344.63,7,2024-06-14,North,Bob,PENDING,123,5
+TXN0097,  Priya Singh  ,priya@,laptop,,19,3806.36,-999,26,2024-04-29,south, Bob,,+91-9876543210,2
+TXN0098,Amit Kumar,not_an_email,,FOOD,3,3104.85,33032.79,150,2024-03-24,East,,CANCELLED,123,3
+TXN0099,Priya Singh,amit@company.com,Headphones,electronics,11,3191.15,17403.69,38,Jan 2024,south, Bob,COMPLETED,,1
+TXN0100,,amit@company.com,laptop,ELECTRONICS,5,1842.68,14796.05,46,2024-11-20,West,Alice,completed,,0
