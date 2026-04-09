@@ -1,9 +1,9 @@
 {
-  "dq_score_pct": 78.9,
+  "dq_score_pct": 84.2,
   "dq_status": "FAIL",
-  "passed": 15,
+  "passed": 16,
   "warnings": 0,
-  "failed": 4,
+  "failed": 3,
   "total_checks": 19,
   "checks": [
     {
@@ -34,9 +34,9 @@
       "category": "Completeness",
       "column": "product_name",
       "check": "Null % \u2264 5.0%",
-      "value": 13.0,
+      "value": 0.0,
       "threshold": 5.0,
-      "status": "FAIL"
+      "status": "PASS"
     },
     {
       "category": "Completeness",

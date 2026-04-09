@@ -16,12 +16,12 @@
     "notes": "PII column customer_email hashed for privacy compliance"
   },
   {
-    "step": "pii_mask_product_name",
+    "step": "null_fill_mode_product_name",
     "layer": "silver",
-    "action": "SHA256 hash applied to product_name",
+    "action": "Fill 13 null(s) with mode ('') in product_name",
     "rows_in": 100,
     "rows_out": 100,
-    "notes": "PII column product_name hashed for privacy compliance"
+    "notes": "Categorical nulls in product_name filled with most frequent value: ''"
   },
   {
     "step": "null_fill_mode_category",
