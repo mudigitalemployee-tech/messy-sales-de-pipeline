@@ -1,7 +1,7 @@
 [
   {
     "rule": "blank_normalization",
-    "action": "Converted 40 empty/whitespace strings to NaN",
+    "action": "Converted 40 empty/whitespace string(s) to NaN",
     "detail": {
       "customer_email": 26,
       "product_name": 14
@@ -10,175 +10,195 @@
   },
   {
     "rule": "drop_critical_nulls",
-    "action": "Dropped 2 rows where critical field 'order_date' was null",
+    "action": "Dropped 2 row(s) \u2014 null critical field 'order_date'",
     "column": "order_date",
     "rows_affected": 2
   },
   {
     "rule": "impute_missing",
-    "action": "Filled 19 null(s) in 'category' with mode ('ELECTRONICS')",
+    "column": "product_name",
+    "strategy": "mode",
+    "fill_value": "laptop",
+    "rows_affected": 27,
+    "action": "Filled 27 null(s) with mode ('laptop')"
+  },
+  {
+    "rule": "impute_missing",
     "column": "category",
     "strategy": "mode",
     "fill_value": "ELECTRONICS",
-    "rows_affected": 19
+    "rows_affected": 19,
+    "action": "Filled 19 null(s) with mode ('ELECTRONICS')"
   },
   {
     "rule": "impute_missing",
-    "action": "Filled 5 null(s) in 'quantity' with median (9.0)",
     "column": "quantity",
     "strategy": "median",
     "fill_value": 9.0,
-    "rows_affected": 5
+    "rows_affected": 5,
+    "action": "Filled 5 null(s) with median (9.0)"
   },
   {
     "rule": "impute_missing",
-    "action": "Filled 4 null(s) in 'unit_price' with median (2541.21)",
     "column": "unit_price",
     "strategy": "median",
     "fill_value": 2541.21,
-    "rows_affected": 4
+    "rows_affected": 4,
+    "action": "Filled 4 null(s) with median (2541.21)"
   },
   {
     "rule": "impute_missing",
-    "action": "Filled 4 null(s) in 'total_amount' with median (22375.54)",
     "column": "total_amount",
     "strategy": "median",
     "fill_value": 22375.54,
-    "rows_affected": 4
+    "rows_affected": 4,
+    "action": "Filled 4 null(s) with median (22375.54)"
   },
   {
     "rule": "impute_missing",
-    "action": "Filled 2 null(s) in 'discount_pct' with median (26.0)",
     "column": "discount_pct",
     "strategy": "median",
     "fill_value": 26.0,
-    "rows_affected": 2
+    "rows_affected": 2,
+    "action": "Filled 2 null(s) with median (26.0)"
   },
   {
     "rule": "impute_missing",
-    "action": "Filled 14 null(s) in 'region' with mode ('West')",
     "column": "region",
     "strategy": "mode",
     "fill_value": "West",
-    "rows_affected": 14
+    "rows_affected": 14,
+    "action": "Filled 14 null(s) with mode ('West')"
   },
   {
     "rule": "impute_missing",
-    "action": "Filled 12 null(s) in 'sales_rep' with mode ('CHARLIE')",
     "column": "sales_rep",
     "strategy": "mode",
     "fill_value": "CHARLIE",
-    "rows_affected": 12
+    "rows_affected": 12,
+    "action": "Filled 12 null(s) with mode ('CHARLIE')"
   },
   {
     "rule": "impute_missing",
-    "action": "Filled 19 null(s) in 'status' with mode ('COMPLETED')",
     "column": "status",
     "strategy": "mode",
     "fill_value": "COMPLETED",
-    "rows_affected": 19
+    "rows_affected": 19,
+    "action": "Filled 19 null(s) with mode ('COMPLETED')"
   },
   {
     "rule": "impute_missing",
-    "action": "Filled 1 null(s) in 'rating' with median (3.0)",
     "column": "rating",
     "strategy": "median",
     "fill_value": 3.0,
-    "rows_affected": 1
+    "rows_affected": 1,
+    "action": "Filled 1 null(s) with median (3.0)"
   },
   {
     "rule": "email_validation",
-    "action": "Found 28 invalid email(s) in 'customer_email' \u2192 set to null, flagged in customer_email_valid_flag",
     "column": "customer_email",
-    "rows_affected": 28
+    "rows_affected": 28,
+    "action": "28 invalid email(s) \u2192 nullified, customer_email_valid_flag added"
+  },
+  {
+    "rule": "phone_validation",
+    "column": "phone_number",
+    "rows_affected": 31,
+    "action": "31 invalid phone(s) \u2192 nullified, phone_number_valid_flag added"
   },
   {
     "rule": "negative_value_handling",
-    "action": "Converted 5 negative value(s) in 'quantity' to absolute, flagged in quantity_negative_flag",
     "column": "quantity",
-    "rows_affected": 5
+    "rows_affected": 5,
+    "action": "5 negative(s) in 'quantity' \u2192 abs(), quantity_negative_flag added"
   },
   {
     "rule": "negative_value_handling",
-    "action": "Converted 3 negative value(s) in 'unit_price' to absolute, flagged in unit_price_negative_flag",
     "column": "unit_price",
-    "rows_affected": 3
+    "rows_affected": 3,
+    "action": "3 negative(s) in 'unit_price' \u2192 abs(), unit_price_negative_flag added"
   },
   {
     "rule": "negative_value_handling",
-    "action": "Converted 6 negative value(s) in 'total_amount' to absolute, flagged in total_amount_negative_flag",
     "column": "total_amount",
-    "rows_affected": 6
+    "rows_affected": 6,
+    "action": "6 negative(s) in 'total_amount' \u2192 abs(), total_amount_negative_flag added"
+  },
+  {
+    "rule": "negative_value_handling",
+    "column": "discount_pct",
+    "rows_affected": 4,
+    "action": "4 negative(s) in 'discount_pct' \u2192 abs(), discount_pct_negative_flag added"
   },
   {
     "rule": "date_validation",
-    "action": "8 invalid date(s) in 'order_date' flagged in order_date_valid_flag, valid dates standardized to YYYY-MM-DD",
     "column": "order_date",
-    "rows_affected": 8
+    "rows_affected": 8,
+    "action": "8 invalid date(s) in 'order_date' flagged, valid \u2192 YYYY-MM-DD"
   },
   {
     "rule": "business_validation",
-    "action": "5 value(s) in 'quantity' violated business rule \u2192 Clamped to >=0, flagged in quantity_valid_flag",
     "column": "quantity",
-    "rows_affected": 5
+    "rows_affected": 5,
+    "action": "5 violation(s) \u2192 Clamped to >=0, quantity_valid_flag set"
   },
   {
     "rule": "business_validation",
-    "action": "7 value(s) in 'discount_pct' violated business rule \u2192 Clamped to [0,100], flagged in discount_pct_valid_flag",
     "column": "discount_pct",
-    "rows_affected": 7
+    "rows_affected": 3,
+    "action": "3 violation(s) \u2192 Clamped to [0,100], discount_pct_valid_flag set"
   },
   {
     "rule": "business_validation",
-    "action": "6 value(s) in 'rating' violated business rule \u2192 Clamped to [0,5], flagged in rating_valid_flag",
     "column": "rating",
-    "rows_affected": 6
+    "rows_affected": 6,
+    "action": "6 violation(s) \u2192 Clamped to [0,5], rating_valid_flag set"
   },
   {
     "rule": "derived_recalculation",
-    "action": "Recalculated 'total_amount' = quantity \u00d7 unit_price \u00d7 (1 - discount_pct/100) | 98 row(s) had mismatched source values (preserved in total_amount_source)",
     "column": "total_amount",
-    "rows_affected": 98
+    "rows_affected": 98,
+    "action": "Recalculated 'total_amount' = quantity \u00d7 unit_price \u00d7 (1 - discount_pct/100) | 98 source mismatch(es) preserved in total_amount_source"
   },
   {
     "rule": "text_standardization",
-    "action": "Standardized 'category': strip + uppercase + special char removal (48 value(s) changed)",
     "column": "category",
-    "rows_affected": 48
+    "rows_affected": 48,
+    "action": "'category': UPPER + strip + clean special chars (48 changed)"
   },
   {
     "rule": "text_standardization",
-    "action": "Standardized 'region': strip + uppercase + special char removal (83 value(s) changed)",
     "column": "region",
-    "rows_affected": 83
+    "rows_affected": 83,
+    "action": "'region': UPPER + strip + clean special chars (83 changed)"
   },
   {
     "rule": "text_standardization",
-    "action": "Standardized 'status': strip + uppercase + special char removal (34 value(s) changed)",
     "column": "status",
-    "rows_affected": 34
+    "rows_affected": 34,
+    "action": "'status': UPPER + strip + clean special chars (34 changed)"
   },
   {
     "rule": "duplicate_detection",
-    "action": "Removed 0 duplicate row(s) | 98 rows remain",
+    "action": "Removed 0 duplicate row(s) | 98 remain",
     "rows_affected": 0
   },
   {
     "rule": "pii_masking",
-    "action": "SHA256-hashed PII column 'customer_name'",
     "column": "customer_name",
+    "action": "SHA256-hashed PII column 'customer_name'",
     "rows_affected": 81
   },
   {
     "rule": "pii_masking",
-    "action": "SHA256-hashed PII column 'customer_email'",
     "column": "customer_email",
+    "action": "SHA256-hashed PII column 'customer_email'",
     "rows_affected": 22
   },
   {
     "rule": "pii_masking",
-    "action": "SHA256-hashed PII column 'phone_number'",
     "column": "phone_number",
-    "rows_affected": 76
+    "action": "SHA256-hashed PII column 'phone_number'",
+    "rows_affected": 45
   }
 ]
